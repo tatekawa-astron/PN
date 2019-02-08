@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE parsetree SYSTEM "parsetree.dtd">
+<parsetree version="1.0">
+    <parsenode rule="program">
+        <parsenode rule="declaration">
+            <parsenode rule="CONST">
+                <value>CONST</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>x_0_0_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>x_0_1_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>x_0_2_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>eps2</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>m_0_</value>
+            </parsenode>
+        </parsenode>
+        <parsenode rule="declaration">
+            <parsenode rule="VARI">
+                <value>VARI</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>x_i_0_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>x_i_1_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>x_i_2_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>v_i_0_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>v_i_1_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>v_i_2_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>m_i_</value>
+            </parsenode>
+        </parsenode>
+        <parsenode rule="declaration">
+            <parsenode rule="VARJ">
+                <value>VARJ</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>x_j_0_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>x_j_1_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>x_j_2_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>m_j_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>v_j_0_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>v_j_1_</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>v_j_2_</value>
+            </parsenode>
+        </parsenode>
+        <parsenode rule="declaration">
+            <parsenode rule="VARF">
+                <value>VARF</value>
+            </parsenode>
+            <parsenode rule="ident">
+                <value>pot_pn2_i_</value>
+            </parsenode>
+        </parsenode>
+        <parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>pot_pn2_i__</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>r1a2e</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>r1b2e</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>rab2e</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>r1binv</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>rabinv</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxa_0_</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxb_0_</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxab_0_</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxa_1_</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxb_1_</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxab_1_</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxa_2_</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxb_2_</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxab_2_</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>r1ainv</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>vi2</value>
+                </parsenode>
+                <parsenode rule="const">
+                    <value>0.0</value>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxa_0_</value>
+                </parsenode>
+                <parsenode rule="fsub">
+                    <value>-</value>
+                    <parsenode rule="ident">
+                        <value>x_i_0_</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>x_0_0_</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxb_0_</value>
+                </parsenode>
+                <parsenode rule="fsub">
+                    <value>-</value>
+                    <parsenode rule="ident">
+                        <value>x_j_0_</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>x_0_0_</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxab_0_</value>
+                </parsenode>
+                <parsenode rule="fsub">
+                    <value>-</value>
+                    <parsenode rule="ident">
+                        <value>x_j_0_</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>x_i_0_</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxa_1_</value>
+                </parsenode>
+                <parsenode rule="fsub">
+                    <value>-</value>
+                    <parsenode rule="ident">
+                        <value>x_i_1_</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>x_0_1_</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxb_1_</value>
+                </parsenode>
+                <parsenode rule="fsub">
+                    <value>-</value>
+                    <parsenode rule="ident">
+                        <value>x_j_1_</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>x_0_1_</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxab_1_</value>
+                </parsenode>
+                <parsenode rule="fsub">
+                    <value>-</value>
+                    <parsenode rule="ident">
+                        <value>x_j_1_</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>x_i_1_</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxa_2_</value>
+                </parsenode>
+                <parsenode rule="fsub">
+                    <value>-</value>
+                    <parsenode rule="ident">
+                        <value>x_i_2_</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>x_0_2_</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxb_2_</value>
+                </parsenode>
+                <parsenode rule="fsub">
+                    <value>-</value>
+                    <parsenode rule="ident">
+                        <value>x_j_2_</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>x_0_2_</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>dxab_2_</value>
+                </parsenode>
+                <parsenode rule="fsub">
+                    <value>-</value>
+                    <parsenode rule="ident">
+                        <value>x_j_2_</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>x_i_2_</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>r1a2e</value>
+                </parsenode>
+                <parsenode rule="fadd">
+                    <value>+</value>
+                    <parsenode rule="fadd">
+                        <value is_root="1">+</value>
+                        <parsenode rule="fadd">
+                            <value is_root="1">+</value>
+                            <parsenode rule="fmul">
+                                <value>*</value>
+                                <parsenode rule="ident">
+                                    <value>dxa_0_</value>
+                                </parsenode>
+                                <parsenode rule="ident">
+                                    <value>dxa_0_</value>
+                                </parsenode>
+                            </parsenode>
+                            <parsenode rule="fmul">
+                                <value>*</value>
+                                <parsenode rule="ident">
+                                    <value>dxa_1_</value>
+                                </parsenode>
+                                <parsenode rule="ident">
+                                    <value>dxa_1_</value>
+                                </parsenode>
+                            </parsenode>
+                        </parsenode>
+                        <parsenode rule="fmul">
+                            <value>*</value>
+                            <parsenode rule="ident">
+                                <value>dxa_2_</value>
+                            </parsenode>
+                            <parsenode rule="ident">
+                                <value>dxa_2_</value>
+                            </parsenode>
+                        </parsenode>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>eps2</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>r1ainv</value>
+                </parsenode>
+                <parsenode rule="functioncall">
+                    <parsenode rule="ident">
+                        <value>rsqrt</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>r1a2e</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>r1b2e</value>
+                </parsenode>
+                <parsenode rule="fadd">
+                    <value>+</value>
+                    <parsenode rule="fadd">
+                        <value is_root="1">+</value>
+                        <parsenode rule="fadd">
+                            <value is_root="1">+</value>
+                            <parsenode rule="fmul">
+                                <value>*</value>
+                                <parsenode rule="ident">
+                                    <value>dxb_0_</value>
+                                </parsenode>
+                                <parsenode rule="ident">
+                                    <value>dxb_0_</value>
+                                </parsenode>
+                            </parsenode>
+                            <parsenode rule="fmul">
+                                <value>*</value>
+                                <parsenode rule="ident">
+                                    <value>dxb_1_</value>
+                                </parsenode>
+                                <parsenode rule="ident">
+                                    <value>dxb_1_</value>
+                                </parsenode>
+                            </parsenode>
+                        </parsenode>
+                        <parsenode rule="fmul">
+                            <value>*</value>
+                            <parsenode rule="ident">
+                                <value>dxb_2_</value>
+                            </parsenode>
+                            <parsenode rule="ident">
+                                <value>dxb_2_</value>
+                            </parsenode>
+                        </parsenode>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>eps2</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>rab2e</value>
+                </parsenode>
+                <parsenode rule="fadd">
+                    <value>+</value>
+                    <parsenode rule="fadd">
+                        <value is_root="1">+</value>
+                        <parsenode rule="fadd">
+                            <value is_root="1">+</value>
+                            <parsenode rule="fmul">
+                                <value>*</value>
+                                <parsenode rule="ident">
+                                    <value>dxab_0_</value>
+                                </parsenode>
+                                <parsenode rule="ident">
+                                    <value>dxab_0_</value>
+                                </parsenode>
+                            </parsenode>
+                            <parsenode rule="fmul">
+                                <value>*</value>
+                                <parsenode rule="ident">
+                                    <value>dxab_1_</value>
+                                </parsenode>
+                                <parsenode rule="ident">
+                                    <value>dxab_1_</value>
+                                </parsenode>
+                            </parsenode>
+                        </parsenode>
+                        <parsenode rule="fmul">
+                            <value>*</value>
+                            <parsenode rule="ident">
+                                <value>dxab_2_</value>
+                            </parsenode>
+                            <parsenode rule="ident">
+                                <value>dxab_2_</value>
+                            </parsenode>
+                        </parsenode>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>eps2</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>r1binv</value>
+                </parsenode>
+                <parsenode rule="functioncall">
+                    <parsenode rule="ident">
+                        <value>rsqrt</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>r1b2e</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>rabinv</value>
+                </parsenode>
+                <parsenode rule="functioncall">
+                    <parsenode rule="ident">
+                        <value>rsqrt</value>
+                    </parsenode>
+                    <parsenode rule="ident">
+                        <value>rab2e</value>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>vi2</value>
+                </parsenode>
+                <parsenode rule="fadd">
+                    <value>+</value>
+                    <parsenode rule="fadd">
+                        <value is_root="1">+</value>
+                        <parsenode rule="fmul">
+                            <value>*</value>
+                            <parsenode rule="ident">
+                                <value>v_i_0_</value>
+                            </parsenode>
+                            <parsenode rule="ident">
+                                <value>v_i_0_</value>
+                            </parsenode>
+                        </parsenode>
+                        <parsenode rule="fmul">
+                            <value>*</value>
+                            <parsenode rule="ident">
+                                <value>v_i_1_</value>
+                            </parsenode>
+                            <parsenode rule="ident">
+                                <value>v_i_1_</value>
+                            </parsenode>
+                        </parsenode>
+                    </parsenode>
+                    <parsenode rule="fmul">
+                        <value>*</value>
+                        <parsenode rule="ident">
+                            <value>v_i_2_</value>
+                        </parsenode>
+                        <parsenode rule="ident">
+                            <value>v_i_2_</value>
+                        </parsenode>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="assign">
+                <value>=</value>
+                <parsenode rule="ident">
+                    <value>pot_pn2_i__</value>
+                </parsenode>
+                <parsenode rule="fadd">
+                    <value>+</value>
+                    <parsenode rule="ident">
+                        <value>pot_pn2_i__</value>
+                    </parsenode>
+                    <parsenode rule="fadd">
+                        <value>+</value>
+                        <parsenode rule="fadd">
+                            <value is_root="1">+</value>
+                            <parsenode rule="fmul">
+                                <value>*</value>
+                                <parsenode rule="fmul">
+                                    <value is_root="1">*</value>
+                                    <parsenode rule="fmul">
+                                        <value is_root="1">*</value>
+                                        <parsenode rule="fmul">
+                                            <value is_root="1">*</value>
+                                            <parsenode rule="const">
+                                                <value>0.25</value>
+                                            </parsenode>
+                                            <parsenode rule="ident">
+                                                <value>rabinv</value>
+                                            </parsenode>
+                                        </parsenode>
+                                        <parsenode rule="ident">
+                                            <value>m_i_</value>
+                                        </parsenode>
+                                    </parsenode>
+                                    <parsenode rule="ident">
+                                        <value>m_j_</value>
+                                    </parsenode>
+                                </parsenode>
+                                <parsenode rule="fsub">
+                                    <value>-</value>
+                                    <parsenode rule="fsub">
+                                        <value is_root="1">-</value>
+                                        <parsenode rule="fmul">
+                                            <value>*</value>
+                                            <parsenode rule="const">
+                                                <value>6.0</value>
+                                            </parsenode>
+                                            <parsenode rule="ident">
+                                                <value>vi2</value>
+                                            </parsenode>
+                                        </parsenode>
+                                        <parsenode rule="fmul">
+                                            <value>*</value>
+                                            <parsenode rule="const">
+                                                <value>7.0</value>
+                                            </parsenode>
+                                            <parsenode rule="fadd">
+                                                <value>+</value>
+                                                <parsenode rule="fadd">
+                                                    <value is_root="1">+</value>
+                                                    <parsenode rule="fmul">
+                                                        <value>*</value>
+                                                        <parsenode rule="ident">
+                                                            <value>v_i_0_</value>
+                                                        </parsenode>
+                                                        <parsenode rule="ident">
+                                                            <value>v_j_0_</value>
+                                                        </parsenode>
+                                                    </parsenode>
+                                                    <parsenode rule="fmul">
+                                                        <value>*</value>
+                                                        <parsenode rule="ident">
+                                                            <value>v_i_1_</value>
+                                                        </parsenode>
+                                                        <parsenode rule="ident">
+                                                            <value>v_j_1_</value>
+                                                        </parsenode>
+                                                    </parsenode>
+                                                </parsenode>
+                                                <parsenode rule="fmul">
+                                                    <value>*</value>
+                                                    <parsenode rule="ident">
+                                                        <value>v_i_2_</value>
+                                                    </parsenode>
+                                                    <parsenode rule="ident">
+                                                        <value>v_j_2_</value>
+                                                    </parsenode>
+                                                </parsenode>
+                                            </parsenode>
+                                        </parsenode>
+                                    </parsenode>
+                                    <parsenode rule="fdiv">
+                                        <value>/</value>
+                                        <parsenode rule="fmul">
+                                            <value is_root="1">*</value>
+                                            <parsenode rule="fadd">
+                                                <value>+</value>
+                                                <parsenode rule="fadd">
+                                                    <value is_root="1">+</value>
+                                                    <parsenode rule="fmul">
+                                                        <value>*</value>
+                                                        <parsenode rule="ident">
+                                                            <value>dxab_0_</value>
+                                                        </parsenode>
+                                                        <parsenode rule="ident">
+                                                            <value>v_i_0_</value>
+                                                        </parsenode>
+                                                    </parsenode>
+                                                    <parsenode rule="fmul">
+                                                        <value>*</value>
+                                                        <parsenode rule="ident">
+                                                            <value>dxab_1_</value>
+                                                        </parsenode>
+                                                        <parsenode rule="ident">
+                                                            <value>v_i_1_</value>
+                                                        </parsenode>
+                                                    </parsenode>
+                                                </parsenode>
+                                                <parsenode rule="fmul">
+                                                    <value>*</value>
+                                                    <parsenode rule="ident">
+                                                        <value>dxab_2_</value>
+                                                    </parsenode>
+                                                    <parsenode rule="ident">
+                                                        <value>v_i_2_</value>
+                                                    </parsenode>
+                                                </parsenode>
+                                            </parsenode>
+                                            <parsenode rule="fadd">
+                                                <value>+</value>
+                                                <parsenode rule="fadd">
+                                                    <value is_root="1">+</value>
+                                                    <parsenode rule="fmul">
+                                                        <value>*</value>
+                                                        <parsenode rule="ident">
+                                                            <value>dxab_0_</value>
+                                                        </parsenode>
+                                                        <parsenode rule="ident">
+                                                            <value>v_j_0_</value>
+                                                        </parsenode>
+                                                    </parsenode>
+                                                    <parsenode rule="fmul">
+                                                        <value>*</value>
+                                                        <parsenode rule="ident">
+                                                            <value>dxab_1_</value>
+                                                        </parsenode>
+                                                        <parsenode rule="ident">
+                                                            <value>v_j_1_</value>
+                                                        </parsenode>
+                                                    </parsenode>
+                                                </parsenode>
+                                                <parsenode rule="fmul">
+                                                    <value>*</value>
+                                                    <parsenode rule="ident">
+                                                        <value>dxab_2_</value>
+                                                    </parsenode>
+                                                    <parsenode rule="ident">
+                                                        <value>v_j_2_</value>
+                                                    </parsenode>
+                                                </parsenode>
+                                            </parsenode>
+                                        </parsenode>
+                                        <parsenode rule="ident">
+                                            <value>rab2e</value>
+                                        </parsenode>
+                                    </parsenode>
+                                </parsenode>
+                            </parsenode>
+                            <parsenode rule="fmul">
+                                <value>*</value>
+                                <parsenode rule="fmul">
+                                    <value is_root="1">*</value>
+                                    <parsenode rule="fmul">
+                                        <value is_root="1">*</value>
+                                        <parsenode rule="fmul">
+                                            <value is_root="1">*</value>
+                                            <parsenode rule="ident">
+                                                <value>m_0_</value>
+                                            </parsenode>
+                                            <parsenode rule="ident">
+                                                <value>m_i_</value>
+                                            </parsenode>
+                                        </parsenode>
+                                        <parsenode rule="ident">
+                                            <value>m_j_</value>
+                                        </parsenode>
+                                    </parsenode>
+                                    <parsenode rule="ident">
+                                        <value>r1ainv</value>
+                                    </parsenode>
+                                </parsenode>
+                                <parsenode rule="ident">
+                                    <value>rabinv</value>
+                                </parsenode>
+                            </parsenode>
+                        </parsenode>
+                        <parsenode rule="fmul">
+                            <value>*</value>
+                            <parsenode rule="fmul">
+                                <value is_root="1">*</value>
+                                <parsenode rule="fmul">
+                                    <value is_root="1">*</value>
+                                    <parsenode rule="fmul">
+                                        <value is_root="1">*</value>
+                                        <parsenode rule="fmul">
+                                            <value is_root="1">*</value>
+                                            <parsenode rule="const">
+                                                <value>0.5</value>
+                                            </parsenode>
+                                            <parsenode rule="ident">
+                                                <value>m_0_</value>
+                                            </parsenode>
+                                        </parsenode>
+                                        <parsenode rule="ident">
+                                            <value>m_i_</value>
+                                        </parsenode>
+                                    </parsenode>
+                                    <parsenode rule="ident">
+                                        <value>m_j_</value>
+                                    </parsenode>
+                                </parsenode>
+                                <parsenode rule="ident">
+                                    <value>r1ainv</value>
+                                </parsenode>
+                            </parsenode>
+                            <parsenode rule="ident">
+                                <value>r1binv</value>
+                            </parsenode>
+                        </parsenode>
+                    </parsenode>
+                </parsenode>
+            </parsenode>
+            <parsenode rule="accum">
+                <value>+=</value>
+                <parsenode rule="ident">
+                    <value>pot_pn2_i_</value>
+                </parsenode>
+                <parsenode rule="ident">
+                    <value>pot_pn2_i__</value>
+                </parsenode>
+            </parsenode>
+        </parsenode>
+    </parsenode>
+</parsetree>

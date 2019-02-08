@@ -1,0 +1,83 @@
+VARI x_i_0_ x_i_1_ x_i_2_ v_i_0_ v_i_1_ v_i_2_ m_i_
+VARJ x_j_0_ x_j_1_ x_j_2_ m_j_ v_j_0_ v_j_1_ v_j_2_
+VARF pot_pn2_i_
+CONST x_0_0_ x_0_1_ x_0_2_ eps2 m_0_
+fsub x_i_0_ x_0_0_ subtmp
+fsub x_j_0_ x_0_0_ subtmp2
+fsub x_j_0_ x_i_0_ subtmp3
+fsub x_i_1_ x_0_1_ subtmp5
+fsub x_j_1_ x_0_1_ subtmp7
+fsub x_j_1_ x_i_1_ subtmp8
+fsub x_i_2_ x_0_2_ subtmp10
+fsub x_j_2_ x_0_2_ subtmp12
+fsub x_j_2_ x_i_2_ subtmp13
+fmul subtmp subtmp multmp
+fmul subtmp5 subtmp5 multmp14
+fadd multmp multmp14 addtmp
+fmul subtmp10 subtmp10 multmp15
+fadd addtmp multmp15 addtmp16
+fadd addtmp16 eps2 addtmp18
+functioncall rsqrt addtmp18 calltmp
+fmul subtmp2 subtmp2 multmp19
+fmul subtmp7 subtmp7 multmp20
+fadd multmp19 multmp20 addtmp21
+fmul subtmp12 subtmp12 multmp22
+fadd addtmp21 multmp22 addtmp23
+fadd addtmp23 eps2 addtmp25
+fmul subtmp3 subtmp3 multmp26
+fmul subtmp8 subtmp8 multmp27
+fadd multmp26 multmp27 addtmp28
+fmul subtmp13 subtmp13 multmp29
+fadd addtmp28 multmp29 addtmp30
+fadd addtmp30 eps2 addtmp32
+functioncall rsqrt addtmp25 calltmp33
+functioncall rsqrt addtmp32 calltmp34
+fmul v_i_0_ v_i_0_ multmp35
+fmul v_i_1_ v_i_1_ multmp36
+fadd multmp35 multmp36 addtmp37
+fmul v_i_2_ v_i_2_ multmp38
+fadd addtmp37 multmp38 addtmp39
+const 2.500000000000000e-01 cc_reg000
+fmul calltmp34 cc_reg000 multmp40
+fmul multmp40 m_i_ multmp41
+fmul multmp41 m_j_ multmp42
+const 6.000000000000000e+00 cc_reg001
+fmul addtmp39 cc_reg001 multmp43
+fmul v_i_0_ v_j_0_ multmp44
+fmul v_i_1_ v_j_1_ multmp45
+fadd multmp44 multmp45 addtmp46
+fmul v_i_2_ v_j_2_ multmp47
+fadd addtmp46 multmp47 addtmp48
+const 7.000000000000000e+00 cc_reg002
+fmul addtmp48 cc_reg002 multmp49
+fsub multmp43 multmp49 subtmp50
+fmul subtmp3 v_i_0_ multmp51
+fmul subtmp8 v_i_1_ multmp52
+fadd multmp51 multmp52 addtmp53
+fmul subtmp13 v_i_2_ multmp54
+fadd addtmp53 multmp54 addtmp55
+fmul subtmp3 v_j_0_ multmp56
+fmul subtmp8 v_j_1_ multmp57
+fadd multmp56 multmp57 addtmp58
+fmul subtmp13 v_j_2_ multmp59
+fadd addtmp58 multmp59 addtmp60
+fmul addtmp55 addtmp60 multmp61
+fdiv multmp61 addtmp32 divtmp
+fsub subtmp50 divtmp subtmp62
+fmul multmp42 subtmp62 multmp63
+fmul m_0_ m_i_ multmp65
+fmul multmp65 m_j_ multmp66
+fmul multmp66 calltmp multmp67
+fmul multmp67 calltmp34 multmp68
+fadd multmp63 multmp68 addtmp69
+const 5.000000000000000e-01 cc_reg003
+fmul m_0_ cc_reg003 multmp71
+fmul multmp71 m_i_ multmp72
+fmul multmp72 m_j_ multmp73
+fmul multmp73 calltmp multmp74
+fmul multmp74 calltmp33 multmp75
+fadd addtmp69 multmp75 addtmp76
+const 0.000000000000000e+00 cc_reg004
+fadd addtmp76 cc_reg004 addtmp77
+accum addtmp77 accumtmp
+assign accumtmp pot_pn2_i_

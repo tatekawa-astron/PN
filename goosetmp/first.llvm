@@ -1,0 +1,120 @@
+; ModuleID = 'test'
+@pot_pn2_i_ = global double 0.000000e+00		; <double*> [#uses=1]
+@x_0_0_ = external global double		; <double*> [#uses=2]
+@x_0_1_ = external global double		; <double*> [#uses=2]
+@x_0_2_ = external global double		; <double*> [#uses=2]
+@eps2 = external global double		; <double*> [#uses=3]
+@m_0_ = external global double		; <double*> [#uses=2]
+
+declare double @accum(double)
+
+declare double @rec(double)
+
+declare double @rsqrt(double)
+
+declare double @sph_kernel(double)
+
+declare double @sph_dkernel(double)
+
+declare double @sqrt(double)
+
+declare double @mux_gt(double, double, double)
+
+declare double @mux_eq(double, double, double)
+
+declare double @norm(double, double)
+
+declare double @bm3(double, double, double, double)
+
+declare double @bm10(double, double, double, double, double, double, double, double, double, double, double)
+
+declare double @bmw(double, double, double)
+
+define double @main0(double %x_i_0_, double %x_i_1_, double %x_i_2_, double %v_i_0_, double %v_i_1_, double %v_i_2_, double %m_i_, double %x_j_0_, double %x_j_1_, double %x_j_2_, double %m_j_, double %v_j_0_, double %v_j_1_, double %v_j_2_) {
+	%gtmp = load double* @x_0_0_		; <double> [#uses=1]
+	%subtmp = sub double %x_i_0_, %gtmp		; <double> [#uses=2]
+	%gtmp1 = load double* @x_0_0_		; <double> [#uses=1]
+	%subtmp2 = sub double %x_j_0_, %gtmp1		; <double> [#uses=2]
+	%subtmp3 = sub double %x_j_0_, %x_i_0_		; <double> [#uses=4]
+	%gtmp4 = load double* @x_0_1_		; <double> [#uses=1]
+	%subtmp5 = sub double %x_i_1_, %gtmp4		; <double> [#uses=2]
+	%gtmp6 = load double* @x_0_1_		; <double> [#uses=1]
+	%subtmp7 = sub double %x_j_1_, %gtmp6		; <double> [#uses=2]
+	%subtmp8 = sub double %x_j_1_, %x_i_1_		; <double> [#uses=4]
+	%gtmp9 = load double* @x_0_2_		; <double> [#uses=1]
+	%subtmp10 = sub double %x_i_2_, %gtmp9		; <double> [#uses=2]
+	%gtmp11 = load double* @x_0_2_		; <double> [#uses=1]
+	%subtmp12 = sub double %x_j_2_, %gtmp11		; <double> [#uses=2]
+	%subtmp13 = sub double %x_j_2_, %x_i_2_		; <double> [#uses=4]
+	%multmp = mul double %subtmp, %subtmp		; <double> [#uses=1]
+	%multmp14 = mul double %subtmp5, %subtmp5		; <double> [#uses=1]
+	%addtmp = add double %multmp, %multmp14		; <double> [#uses=1]
+	%multmp15 = mul double %subtmp10, %subtmp10		; <double> [#uses=1]
+	%addtmp16 = add double %addtmp, %multmp15		; <double> [#uses=1]
+	%gtmp17 = load double* @eps2		; <double> [#uses=1]
+	%addtmp18 = add double %addtmp16, %gtmp17		; <double> [#uses=1]
+	%calltmp = call double @rsqrt(double %addtmp18)		; <double> [#uses=2]
+	%multmp19 = mul double %subtmp2, %subtmp2		; <double> [#uses=1]
+	%multmp20 = mul double %subtmp7, %subtmp7		; <double> [#uses=1]
+	%addtmp21 = add double %multmp19, %multmp20		; <double> [#uses=1]
+	%multmp22 = mul double %subtmp12, %subtmp12		; <double> [#uses=1]
+	%addtmp23 = add double %addtmp21, %multmp22		; <double> [#uses=1]
+	%gtmp24 = load double* @eps2		; <double> [#uses=1]
+	%addtmp25 = add double %addtmp23, %gtmp24		; <double> [#uses=1]
+	%multmp26 = mul double %subtmp3, %subtmp3		; <double> [#uses=1]
+	%multmp27 = mul double %subtmp8, %subtmp8		; <double> [#uses=1]
+	%addtmp28 = add double %multmp26, %multmp27		; <double> [#uses=1]
+	%multmp29 = mul double %subtmp13, %subtmp13		; <double> [#uses=1]
+	%addtmp30 = add double %addtmp28, %multmp29		; <double> [#uses=1]
+	%gtmp31 = load double* @eps2		; <double> [#uses=1]
+	%addtmp32 = add double %addtmp30, %gtmp31		; <double> [#uses=2]
+	%calltmp33 = call double @rsqrt(double %addtmp25)		; <double> [#uses=1]
+	%calltmp34 = call double @rsqrt(double %addtmp32)		; <double> [#uses=2]
+	%multmp35 = mul double %v_i_0_, %v_i_0_		; <double> [#uses=1]
+	%multmp36 = mul double %v_i_1_, %v_i_1_		; <double> [#uses=1]
+	%addtmp37 = add double %multmp35, %multmp36		; <double> [#uses=1]
+	%multmp38 = mul double %v_i_2_, %v_i_2_		; <double> [#uses=1]
+	%addtmp39 = add double %addtmp37, %multmp38		; <double> [#uses=1]
+	%multmp40 = mul double 2.500000e-01, %calltmp34		; <double> [#uses=1]
+	%multmp41 = mul double %multmp40, %m_i_		; <double> [#uses=1]
+	%multmp42 = mul double %multmp41, %m_j_		; <double> [#uses=1]
+	%multmp43 = mul double 6.000000e+00, %addtmp39		; <double> [#uses=1]
+	%multmp44 = mul double %v_i_0_, %v_j_0_		; <double> [#uses=1]
+	%multmp45 = mul double %v_i_1_, %v_j_1_		; <double> [#uses=1]
+	%addtmp46 = add double %multmp44, %multmp45		; <double> [#uses=1]
+	%multmp47 = mul double %v_i_2_, %v_j_2_		; <double> [#uses=1]
+	%addtmp48 = add double %addtmp46, %multmp47		; <double> [#uses=1]
+	%multmp49 = mul double 7.000000e+00, %addtmp48		; <double> [#uses=1]
+	%subtmp50 = sub double %multmp43, %multmp49		; <double> [#uses=1]
+	%multmp51 = mul double %subtmp3, %v_i_0_		; <double> [#uses=1]
+	%multmp52 = mul double %subtmp8, %v_i_1_		; <double> [#uses=1]
+	%addtmp53 = add double %multmp51, %multmp52		; <double> [#uses=1]
+	%multmp54 = mul double %subtmp13, %v_i_2_		; <double> [#uses=1]
+	%addtmp55 = add double %addtmp53, %multmp54		; <double> [#uses=1]
+	%multmp56 = mul double %subtmp3, %v_j_0_		; <double> [#uses=1]
+	%multmp57 = mul double %subtmp8, %v_j_1_		; <double> [#uses=1]
+	%addtmp58 = add double %multmp56, %multmp57		; <double> [#uses=1]
+	%multmp59 = mul double %subtmp13, %v_j_2_		; <double> [#uses=1]
+	%addtmp60 = add double %addtmp58, %multmp59		; <double> [#uses=1]
+	%multmp61 = mul double %addtmp55, %addtmp60		; <double> [#uses=1]
+	%divtmp = fdiv double %multmp61, %addtmp32		; <double> [#uses=1]
+	%subtmp62 = sub double %subtmp50, %divtmp		; <double> [#uses=1]
+	%multmp63 = mul double %multmp42, %subtmp62		; <double> [#uses=1]
+	%gtmp64 = load double* @m_0_		; <double> [#uses=1]
+	%multmp65 = mul double %gtmp64, %m_i_		; <double> [#uses=1]
+	%multmp66 = mul double %multmp65, %m_j_		; <double> [#uses=1]
+	%multmp67 = mul double %multmp66, %calltmp		; <double> [#uses=1]
+	%multmp68 = mul double %multmp67, %calltmp34		; <double> [#uses=1]
+	%addtmp69 = add double %multmp63, %multmp68		; <double> [#uses=1]
+	%gtmp70 = load double* @m_0_		; <double> [#uses=1]
+	%multmp71 = mul double 5.000000e-01, %gtmp70		; <double> [#uses=1]
+	%multmp72 = mul double %multmp71, %m_i_		; <double> [#uses=1]
+	%multmp73 = mul double %multmp72, %m_j_		; <double> [#uses=1]
+	%multmp74 = mul double %multmp73, %calltmp		; <double> [#uses=1]
+	%multmp75 = mul double %multmp74, %calltmp33		; <double> [#uses=1]
+	%addtmp76 = add double %addtmp69, %multmp75		; <double> [#uses=1]
+	%addtmp77 = add double 0.000000e+00, %addtmp76		; <double> [#uses=1]
+	%accumtmp = call double @accum(double %addtmp77)		; <double> [#uses=1]
+	store double %accumtmp, double* @pot_pn2_i_
+	ret double 0.000000e+00
+}
